@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Автоматически кормит бота при низком уровне сытости с помощью предметов или серверной команды.",
   "main": "index.js",
-  "author": "BlockMine Developer",
+  "author": "artemploxoy",
   "botpanel": {
     "icon": "Beef",
     "categories": [
