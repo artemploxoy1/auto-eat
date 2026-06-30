@@ -1,0 +1,47 @@
+{
+  "name": "auto-eat",
+  "version": "1.0.0",
+  "description": "Автоматически кормит бота при низком уровне сытости с помощью предметов или серверной команды.",
+  "main": "index.js",
+  "author": "BlockMine Developer",
+  "botpanel": {
+    "icon": "Beef",
+    "categories": [
+      "Автоматизация"
+    ],
+    "settings": {
+      "autoEatEnabled": {
+        "type": "boolean",
+        "label": "Включить авто-еду",
+        "default": true
+      },
+      "actionsPreset": {
+        "type": "select",
+        "label": "Способ питания",
+        "options": [
+          {
+            "value": "item",
+            "label": "Обычная еда (предмет)"
+          },
+          {
+            "value": "custom",
+            "label": "Команда сервера"
+          }
+        ],
+        "default": "item"
+      },
+      "enableEatCommand": {
+        "type": "string",
+        "label": "Команда для питания",
+        "description": "Укажите команду, которая будет отправлена в чат (например, /feed)",
+        "default": "/feed"
+      },
+      "minHunger": {
+        "type": "number",
+        "label": "Минимальный порог голода",
+        "description": "Уровень сытости (от 0 до 20), при котором бот начинает есть.",
+        "default": 14
+      }
+    }
+  }
+}
